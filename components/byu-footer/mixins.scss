@@ -65,9 +65,17 @@
   vertical-align: top;
 }
 
+/* -- for secondary footer self / container -- */
+
+@mixin secondaryFooterSelfMobile() {
+  width: 100%;
+}
+/* -- for secondary footer slotted items-- */
+
 @mixin secondaryFooterMobile() {
   width: 100%;
 }
+
 
 @mixin secondaryFooterMobileLast() {
   padding-bottom: 30px;

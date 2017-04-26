@@ -2,6 +2,7 @@
 
 :host {
     @include footerColumn();
+    @include footerColumnMobile();
 }
 
 .header {

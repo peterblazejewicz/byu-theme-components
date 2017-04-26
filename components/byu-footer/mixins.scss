@@ -25,7 +25,7 @@
 }
 
 @mixin footerInnerWrapper() {
-  max-width: 1200px;
+  max-width: $headerFooterWidthLimit;
   margin-top: -10px;
 }
 
@@ -51,8 +51,11 @@
 }
 
 @mixin secondaryFooterContent() {
-  width: 1200px !important;
   margin: 0 15px;
+  @media screen and (min-width: $headerFooterWidthLimit) {
+    /* -- adding 1200px width but should only be for large sizes */
+    width: $headerFooterWidthLimit !important;
+  }
 }
 
 @mixin secondaryFooterContentFullWidth() {
@@ -90,7 +93,7 @@
 @mixin secondaryFooterSelfTablet() {
   width: 100%;
 }
-
+/* -- this is the columns, whatever is slotted into secondary footer -- */
 @mixin secondaryFooterTablet() {
   width: 50%;
 }

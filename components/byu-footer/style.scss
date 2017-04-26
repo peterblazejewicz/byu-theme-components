@@ -62,6 +62,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .secondary-footer {
+    @include secondaryFooterSelfTablet();
+  }
   .secondary-footer ::slotted(*) {
     @include secondaryFooterTablet();
   }

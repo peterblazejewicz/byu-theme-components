@@ -1,4 +1,6 @@
 @import "./mixins.scss";
+/* need this for media queries -- */
+@import "../shared-styles/settings.scss";
 
 .blue-footer {
   @include blueFooter();
@@ -28,6 +30,9 @@
 /* -- adding 1200px width but should only be for large sizes */
 .secondary-footer-content {
   @include secondaryFooterContent();
+  @media screen and (min-width: $headerFooterWidthLimit) {
+    @include secondaryFooterContentLarge();
+  }
 }
 
 :host([full-width]) {

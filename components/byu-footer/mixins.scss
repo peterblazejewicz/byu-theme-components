@@ -52,10 +52,11 @@
 
 @mixin secondaryFooterContent() {
   margin: 0 15px;
-  @media screen and (min-width: $headerFooterWidthLimit) {
+
+}
+@mixin secondaryFooterContentLarge() {
     /* -- adding 1200px width but should only be for large sizes */
     width: $headerFooterWidthLimit !important;
-  }
 }
 
 @mixin secondaryFooterContentFullWidth() {

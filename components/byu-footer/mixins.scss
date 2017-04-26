@@ -85,6 +85,12 @@
   padding-top: 10px;
 }
 
+/* -- for secondary footer self / container -- */
+
+@mixin secondaryFooterSelfTablet() {
+  width: 100%;
+}
+
 @mixin secondaryFooterTablet() {
   width: 50%;
 }

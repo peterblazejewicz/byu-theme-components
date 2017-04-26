@@ -18,6 +18,7 @@
     font-size: 20px !important;
     border-bottom: 1px solid $gray !important;
     padding-bottom: 3px !important;
+    margin-bottom: 5px !important; /* needed space below the header line */
     white-space: nowrap !important;
     font-weight: $footerContentFontWeight !important;
     width: 100%;

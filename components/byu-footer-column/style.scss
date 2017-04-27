@@ -3,7 +3,14 @@
 :host {
     @include footerColumn();
     @include footerColumnMobile();
+    @include footerColumnTablet();
+    @include footerColumnLarge();
 }
+//:host.double-wide {
+//    @include footerColumnDoubleMobile();
+//    @include footerColumnDoubleTablet();
+//    @include footerColumnDoubleLarge();
+//}
 
 .header {
     @include header();

@@ -13,6 +13,43 @@
         width: 100%;
     }
 }
+@mixin footerColumnTablet() {
+    /* -- mobile should be full width */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 50%;
+    }
+}
+@mixin footerColumnLarge() {
+    /* -- mobile should be full width */
+    @media screen and (min-width: 1024px) {
+        width: 25%;
+    }
+}
+
+/* -- double wide column option to work on later: */
+//
+//@mixin footerColumnDoubleMobile() {
+//    /* -- mobile should be full width */
+//@media screen and (max-width: 767px) {
+//    width: 100%;
+//}
+//}
+//@mixin footerColumnDoubleTablet() {
+//    /* -- mobile should be full width */
+//    @media screen and (min-width: 768px) and (max-width: 1023px) {
+//        width: 50%;
+//    }
+//}
+//@mixin footerColumnDoubleLarge() {
+//    /* -- mobile should be full width */
+//    @media screen and (min-width: 1024px) {
+//        width: 25%;
+//    }
+//}
+
+
+
+
 
 @mixin header() {
     width: 100%;

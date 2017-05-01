@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 767px) {
+  .secondary-footer {
+    @include secondaryFooterSelfMobile();
+  }
   .secondary-footer ::slotted(*) {
     @include secondaryFooterMobile();
   }

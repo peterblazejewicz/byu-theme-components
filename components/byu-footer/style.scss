@@ -70,7 +70,9 @@
   .secondary-footer {
     @include secondaryFooterSelfTablet();
   }
-  .secondary-footer ::slotted(*) {
+  /* -- changed this from .secondary-footer to secondary-footer-content because firefox can't understand,
+  and puts .secondary-footer > * when we woul dneed .secondary-footer-content > * */
+  .secondary-footer-content ::slotted(*) {
     @include secondaryFooterTablet();
   }
 

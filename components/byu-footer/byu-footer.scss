@@ -71,13 +71,13 @@
     @include secondaryFooterTabletTopColumns();
   }
 
-  .secondary-footer-content ::slotted(*:nth-child(odd)) {
-    @include secondaryFooterNoLeftPad();
-  }
-
-  .secondary-footer-content ::slotted(*:nth-child(even)) {
-    @include secondaryFooterNoRightPad();
-  }
+  //.secondary-footer-content ::slotted(*:nth-child(odd)) {
+  //  @include secondaryFooterNoLeftPad();
+  //}
+  //
+  //.secondary-footer-content ::slotted(*:nth-child(even)) {
+  //  @include secondaryFooterNoRightPad();
+  //}
 }
 
 @media (min-width: 1200px) {
